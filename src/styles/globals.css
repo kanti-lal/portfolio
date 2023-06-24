@@ -1,17 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer utilities {
+  .bg-kl-lightGray {
+    background-color: #F6F8FB;
+  }
+}
+
+@layer components {
+  * {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+  .stickyNavbar {
+    @apply sticky top-0;
+  }
+
+  .main-container {
+    @apply max-w-[1440px] mx-auto px-5 py-8;
+  }
+
+  .stickyNavbarStyles {
+    @apply flex bg-[#F6F8FB] items-center justify-between w-full px-8 sm:px-16 py-5 shadow-lg;
+  }
+
+  .sidebar-link {
+    @apply px-10 rounded-lg py-4 text-lg text-[#5C637C] md:text-sm cursor-pointer hover:bg-white hover:shadow-md transition duration-200 ease-in-out;
+  }
+
+  .socialLink {
+    @apply flex items-center justify-center bg-white hover:shadow-lg shadow-2xl w-14 h-14 rounded-2xl p-3.5 cursor-pointer border border-transparent hover:border-gray-200;
+  }
+
+  .active {
+    @apply bg-white;
+  }
+
+  .navLink {
+    @apply px-3 py-2 rounded-lg border border-transparent hover:bg-white cursor-pointer uppercase;
+  }
+
+  .hobbyBox {
+    @apply flex items-center justify-around px-5 py-4 bg-kl-lightGray rounded-3xl space-x-5 cursor-pointer hover:shadow-xl shadow-inner border border-transparent hover:border-gray-200;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
   }
 }
