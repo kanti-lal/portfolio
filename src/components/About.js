@@ -11,7 +11,7 @@ function About() {
       </h3>
       <div className="flex items-center justify-center w-36 h-36 sm:w-40 sm:h-40 object-contain bg-kl-lightGray p-3 rounded-full shadow-xl hover:shadow-inner cursor-pointer hover:border-gray-100">
         <Image
-          src="/static/images/aboutpic.jpg"
+          src="/static/images/aboutpic.jpeg"
           alt="Kantilal"
           width={200}
           height={200}
