@@ -21,9 +21,9 @@ function About() {
 
       <div className="p-8 flex flex-col space-y-4">
         <p className="text-base text-justify sm:text-lg text-gray-600">
-          I am a motivated professional Front End / JavaScript / ReactJS /
+         I am a motivated professional Front End / JavaScript / ReactJS /
           NextJS developer with over 2+ year of experience, a strong work ethic
-          and excellent interpersonal skills. I've completed BTech in Computer
+          and excellent interpersonal skills. I&apos;ve completed BTech in Computer
           Science & Engineering from Bikaner Technical University. I am an
           astute Front End developer with professional experience building
           scalable Front End Application, converting mockups into pixel-perfect
