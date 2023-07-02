@@ -7,6 +7,7 @@ import About from "@/components/About";
 import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
 import HeroSection from "@/components/HeroSection";
+import Resume from "@/components/Resume";
 import Contact from "@/components/Contact";
 const inter = Inter({ subsets: ["latin"] });
 
@@ -86,6 +87,9 @@ export default function Home() {
           <HeroSection />
           <div className="main-container">
             <About />
+          </div>
+          <div className="w-full bg-kl-lightGray">
+            <Resume />
           </div>
           <div className="w-full bg-kl-lightGray">
             <Contact />
