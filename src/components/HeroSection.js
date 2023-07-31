@@ -16,7 +16,7 @@ function HeroSection() {
             I am Kanti Lal
           </h4>
           <h6 className="text-base text- md:text-lg lg:text-xl xl:text-2xl font-light">
-            JavaScript | Front End Developer
+            Software Engineer | Front End Engineer
           </h6>
 
           <div className="flex space-x-5 pt-5">

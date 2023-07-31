@@ -1,12 +1,9 @@
 import CertificateCard from "@/components/CertificateCard";
 import EducationCard from "@/components/EducationCard";
 import { SkillCard } from "@/components/SkillCard";
-import { FaEye } from "react-icons/fa";
-import { IoMdClose } from "react-icons/io";
 import { FiDownload } from "react-icons/fi";
 import { useState } from "react";
 import ExperienceCard from "@/components/ExperienceCard";
-import SkillCard2 from "@/components/SkillCard2";
 
 function Resume() {
   const [resumeBtn, setResumeBtn] = useState("false");
@@ -25,14 +22,14 @@ function Resume() {
         </h6>
         <div className="grid grid-cols-1 px-8 md:grid-cols-2 gap-6 lg:flex-row items-center justify-around w-full">
           <EducationCard
-            year="2017-2020"
-            degree="Bachelor of Computer Applications"
-            university="Veer Narmad South Gujarat University"
+            year="2014-2017"
+            degree="Poly. Computer Science & Engg Diploma"
+            university="Board of Technical Education (BTER), Jodhpur"
           />
           <EducationCard
-            year="2020-2022"
-            degree="Master of Computer Applications"
-            university="Parul University"
+            year="2018-2022"
+            degree="B.Tech in Computer Science & Engineering"
+            university="Bikaner Technical University, Rajasthan"
           />
         </div>
       </div>
@@ -45,42 +42,46 @@ function Resume() {
           <CertificateCard
             logo="/static/images/udemy.svg"
             company="Udemy"
-            title="Advanced CSS and Sass: Flexbox, Grid, Animations and More!"
-            link="http://ude.my/UC-7b02833b-d6a1-487b-ab5c-d4df5a4a4bae"
+            title="React - The Complete Guide"
+            link=""
           />
           <CertificateCard
             logo="/static/images/udemy.svg"
             company="Udemy"
-            title="The Complete JavaScript Course 2020: From Zero to Expert!"
-            link="http://ude.my/UC-UOAMD8X8"
+            title="HTML & CSS"
+            link="https://www.udemy.com/certificate/UC-5681ead8-c927-4ec0-9479-8799ebfae674/"
           />
-
-          <CertificateCard
-            logo="/static/images/coursera.svg"
-            company="Coursera"
-            title="Google UX Design"
-            link="https://www.coursera.org/account/accomplishments/verify/WPH6AVCEMBC2"
-          />
-          <CertificateCard
-            logo="/static/images/freecodecamp.svg"
-            company="FreeCodeCamp"
-            title="Front End Libraries"
-            link=""
-          />
+          <div>
+            <CertificateCard
+              logo="/static/images/hacker.png"
+              company="HackerRank "
+              title="Javascript"
+              link="https://www.hackerrank.com/certificates/e57718f5d138"
+            />
+          </div>
+          <div>
+            <CertificateCard
+              logo="/static/images/hacker.png"
+              company="HackerRank "
+              title="ReactJS  "
+              link="https://www.hackerrank.com/certificates/8eb48748b03a"
+            />
+          </div>
 
           <CertificateCard
             logo="/static/images/linkedin.svg"
             company="LinkedIn"
-            title="React.js Essential Training"
-            link="https://www.linkedin.com/learning/react-js-essential-training"
+            title="React Design Patterns"
+            link="https://www.linkedin.com/learning/certificates/5a2220378d9426dfb1f31e0903dd71bf4b489139cf4becc5eb61b6afc3257ac1?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BB5coPfVkTK2jbdllC8hSpw%3D%3D"
           />
-          <CertificateCard
-            logo="/static/images/educative.svg"
-            company="Cutshort "
-            title="Advanced proficiency in Javascript"
-            link="https://cutshort.io/certificate/75985"\
-            
-          />
+          <div>
+            <CertificateCard
+              logo="/static/images/cutshorts.png"
+              company="Cutshort "
+              title="Advanced proficiency in Javascript"
+              link="https://cutshort.io/certificate/75985"
+            />
+          </div>
         </div>
       </div>
 
@@ -94,15 +95,15 @@ function Resume() {
             year="Feb 2023 - Present"
             post="Front End Developer"
             company="Yudiz Solutions Ltd."
-            info="Working as a Front End Developer In Yudiz Solutions. Proficient In ReactJS, NextJS, GraphQL, Redux, Tailwind CSS etc. I have worked on some big projects called CricTracker and Epiko Market. I have explored NextJS, GraphQL."
+            info="Working as a Front End Developer In Yudiz Solutions. Proficient In ReactJS, NextJS, GraphQL, Redux, Tailwind CSS etc. I have worked on some big projects called Craftroots and Tokenomics DAO. I have explored NextJS, GraphQL."
           />
           <ExperienceCard
             logo="/static/images/azilen.svg"
             year="2021 - 2023"
             post="Associate Software Engineer"
             company="Azilen Technologies Pvt Ltd"
-            info="Worked on designing landing pages of website using different technologies like
-HTML, CSS, SCSS, BOOTSTRAP, TAILWIND CSS, JAVASCRIPT, JQUERY, REACTJS etc."
+            info="Worked on multiple projects using different technologies like  
+                   REACTJS, NextJS, Akita, JAVASCRIPT, JQUERY, HTML, CSS, SCSS, BOOTSTRAP, TAILWIND CSS, etc."
           />
         </div>
       </div>

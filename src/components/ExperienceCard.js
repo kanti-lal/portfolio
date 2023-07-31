@@ -27,3 +27,4 @@ const ExperienceCard = ({ logo, year, post, company, info }) => {
 };
 
 export default ExperienceCard;
+ 
