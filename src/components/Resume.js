@@ -113,20 +113,23 @@ function Resume() {
           Skills
         </h6>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 gap-6 w-full mb-6 px-8 content-center items-center">
-          <SkillCard img="/static/images/adobexd.svg" title="Adobe XD" />
-          <SkillCard img="/static/images/figma.svg" title="Figma" />
-          <SkillCard img="/static/images/bootstrap.svg" title="Bootstrap" />
-          <SkillCard img="/static/images/sass.svg" title="SASS" />
-          <SkillCard
-            img="/static/images/tailwindcss.svg"
-            title="Tailwind CSS"
-          />
           <SkillCard img="/static/images/javascript.svg" title="JavaScript" />
-          <SkillCard img="/static/images/jquery.svg" title="Jquery" />
           <SkillCard img="/static/images/react.svg" title="React" />
           <SkillCard img="/static/images/redux.svg" title="Redux" />
           <SkillCard img="/static/images/nextjs-2.svg" title="NextJS" />
           <SkillCard img="/static/images/graphql.svg" title="GraphQL" />
+          <SkillCard img="/static/images/prisma.png" title="Prisma" />
+          <SkillCard img="/static/images/jquery.svg" title="Jquery" />
+          <SkillCard
+            img="/static/images/tailwindcss.svg"
+            title="Tailwind CSS"
+          />
+          <SkillCard img="/static/images/bootstrap.svg" title="Bootstrap" />
+          <SkillCard img="/static/images/sass.svg" title="SASS" />
+
+          <SkillCard img="/static/images/formik.png" title="Formik" />
+          <SkillCard img="/static/images/firebase.svg" title="Firebase" />
+          <SkillCard img="/static/images/github.svg" title="Github" />
           <SkillCard
             img="/static/images/styled-components.svg"
             title="Styled Components"
@@ -134,9 +137,8 @@ function Resume() {
           <SkillCard img="/static/images/framer.svg" title="Framer Motion" />
           <SkillCard img="/static/images/material-ui.svg" title="Material UI" />
           <SkillCard img="/static/images/semantic.svg" title="Semantic UI" />
-          <SkillCard img="/static/images/firebase.svg" title="Firebase" />
+
           <SkillCard img="/static/images/npm.svg" title="NPM" />
-          <SkillCard img="/static/images/github.svg" title="Github" />
         </div>
       </div>
 
