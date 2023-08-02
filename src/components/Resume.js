@@ -66,22 +66,37 @@ function Resume() {
               title="ReactJS  "
               link="https://www.hackerrank.com/certificates/8eb48748b03a"
             />
+           
           </div>
-
+          <div>
+          <CertificateCard
+          logo="/static/images/hacker.png"
+          company="HackerRank "
+          title="CSS"
+          link="https://www.hackerrank.com/certificates/180bbbf81452"
+        /></div>
+        <div>
+        <CertificateCard
+          logo="/static/images/cutshorts.png"
+          company="Cutshort "
+          title="Advanced proficiency in Javascript"
+          link="https://cutshort.io/certificate/75985"
+        />
+      </div>
+          <CertificateCard
+            logo="/static/images/linkedin.svg"
+            company="LinkedIn"
+            title="React Software Architecture"
+            link="https://www.linkedin.com/learning/certificates/23ed9d0f413326e113b83a5cc8d1198113f203b78983577ce46e719a8d741fc4?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BuqOeQZOHTKu5da3pgXLCig%3D%3D"
+          />
           <CertificateCard
             logo="/static/images/linkedin.svg"
             company="LinkedIn"
             title="React Design Patterns"
             link="https://www.linkedin.com/learning/certificates/5a2220378d9426dfb1f31e0903dd71bf4b489139cf4becc5eb61b6afc3257ac1?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BB5coPfVkTK2jbdllC8hSpw%3D%3D"
           />
-          <div>
-            <CertificateCard
-              logo="/static/images/cutshorts.png"
-              company="Cutshort "
-              title="Advanced proficiency in Javascript"
-              link="https://cutshort.io/certificate/75985"
-            />
-          </div>
+
+         
         </div>
       </div>
 
