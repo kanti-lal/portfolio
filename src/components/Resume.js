@@ -160,7 +160,7 @@ function Resume() {
       {/* Resume */}
 
       <a
-        href="./kanti2023resume.pdf"
+        href="./kanti-resume.pdf"
         target="_blank"
         download
         className="flex space-x-4 text-xl my-6 items-center bg-kl-dark border border-transparent hover:shadow-md hover:border-gray-200 focus:outline-none  text-kl-lightGray px-6 py-5 rounded-2xl cursor-pointer"
