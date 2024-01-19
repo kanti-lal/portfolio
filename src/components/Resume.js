@@ -52,6 +52,24 @@ function Resume() {
             link="https://www.udemy.com/certificate/UC-5681ead8-c927-4ec0-9479-8799ebfae674/"
           />
           <div>
+          <CertificateCard
+            logo="/static/images/namasteDev.png"
+            company="NamasteDev.com"
+            title="Namaste React 🚀"
+            link="https://drive.google.com/file/d/1ko7yU5YULqSf405M9tTEXUyuKFv8TFWF/view?pli=1"
+          />
+          </div>
+         
+          <div>
+          <CertificateCard
+            logo="/static/images/atlassian.png"
+            company="Atlassian"
+            title="Atlassian Agile Project Management"
+            link="https://www.linkedin.com/learning/certificates/fb0ecb6faf5babb1608f3cd5371090e874ce7105afdf3e90dbfffc28f64deb31"
+          />
+          </div>
+          <div>
+            
             <CertificateCard
               logo="/static/images/hacker.png"
               company="HackerRank "
@@ -63,26 +81,27 @@ function Resume() {
             <CertificateCard
               logo="/static/images/hacker.png"
               company="HackerRank "
-              title="ReactJS  "
+              title="ReactJS"
               link="https://www.hackerrank.com/certificates/8eb48748b03a"
             />
-           
           </div>
           <div>
-          <CertificateCard
-          logo="/static/images/hacker.png"
-          company="HackerRank "
-          title="CSS"
-          link="https://www.hackerrank.com/certificates/180bbbf81452"
-        /></div>
-        <div>
-        <CertificateCard
-          logo="/static/images/cutshorts.png"
-          company="Cutshort "
-          title="Advanced proficiency in Javascript"
-          link="https://cutshort.io/certificate/75985"
-        />
-      </div>
+            <CertificateCard
+              logo="/static/images/hacker.png"
+              company="HackerRank "
+              title="CSS"
+              link="https://www.hackerrank.com/certificates/180bbbf81452"
+            />
+          </div>
+          <div>
+            <CertificateCard
+              logo="/static/images/cutshorts.png"
+              company="Cutshort "
+              title="Advanced proficiency in Javascript"
+              link="https://cutshort.io/certificate/75985"
+            />
+          </div>
+
           <CertificateCard
             logo="/static/images/linkedin.svg"
             company="LinkedIn"
