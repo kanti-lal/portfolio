@@ -124,9 +124,16 @@ function Resume() {
           Experience
         </h6>
         <div className="grid grid-cols-1 px-8 md:grid-cols-2 gap-6 lg:flex-row justify-around w-full">
+        <ExperienceCard
+            logo="/static/images/codiste.png"
+            year="March 2024 - Present"
+            post="Software Engineer"
+            company="Codiste Pvt Ltd"
+            info="Currently working as a Software Engineer at Codiste Pvt Ltd. Proficient in ReactJS, NextJS, GraphQL, and developing AI and blockchain frontend applications. Also learning Node.js and backend services."
+          />
           <ExperienceCard
             logo="/static/images/yudiz.svg"
-            year="Feb 2023 - Present"
+            year="Feb 2023 - March 2024"
             post="Front End Developer"
             company="Yudiz Solutions Ltd."
             info="Working as a Front End Developer In Yudiz Solutions. Proficient In ReactJS, NextJS, GraphQL, Redux, Tailwind CSS etc. I have worked on some big projects called Craftroots and Tokenomics DAO. I have explored NextJS, GraphQL."
