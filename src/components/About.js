@@ -1,15 +1,29 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 function About() {
   return (
-    <div
-      className="flex flex-col items-center bg-white pt-10 pb-12 px-4 sm:px-16"
+    <motion.div
+      className="flex flex-col items-center bg-white dark:bg-gray-900 pt-10 pb-12 px-4 sm:px-16"
       id="about"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
     >
-      <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-kl-dark mb-10">
+      <motion.h3 
+        className="text-3xl md:text-4xl lg:text-5xl font-bold text-kl-dark dark:text-white mb-10"
+        initial={{ y: -20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.3 }}
+      >
         About me
-      </h3>
-      <div className="flex items-center justify-center w-36 h-36 sm:w-40 sm:h-40 object-contain bg-kl-lightGray p-3 rounded-full shadow-xl hover:shadow-inner cursor-pointer hover:border-gray-100">
+      </motion.h3>
+      <motion.div 
+        className="flex items-center justify-center w-36 h-36 sm:w-40 sm:h-40 object-contain bg-kl-lightGray dark:bg-gray-800 p-3 rounded-full shadow-xl hover:shadow-inner cursor-pointer hover:border-gray-100"
+        initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ delay: 0.5 }}
+      >
         <Image
           src="/static/images/aboutpic.jpeg"
           alt="Kantilal"
@@ -17,10 +31,15 @@ function About() {
           height={200}
           className="rounded-full"
         />
-      </div>
+      </motion.div>
 
-      <div className="p-8 flex flex-col space-y-4">
-        <p className="text-base text-justify sm:text-lg text-gray-600">
+      <motion.div 
+        className="p-8 flex flex-col space-y-4"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.7 }}
+      >
+        <p className="text-base text-justify sm:text-lg text-gray-600 dark:text-gray-300">
           I am a motivated professional Front End / JavaScript / ReactJS /
           NextJS developer with over 2.5+ year of experience, a strong work ethic
           and excellent interpersonal skills. I&apos;ve completed BTech in
@@ -30,9 +49,12 @@ function About() {
           designs, creating beautiful website animations. Proficient In ReactJS,
           NextJS, Redux, TailwindCSS, SCSS, Material UI etc.
         </p>
-        <h3 className="text-2xl text-gray-600 font-bold">I Love</h3>
+        <h3 className="text-2xl text-gray-600 dark:text-gray-300 font-bold">I Love</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-2 md:gap-5 xl:flex items-center justify-between">
-          <div className="hobbyBox">
+          <motion.div 
+            className="hobbyBox"
+            whileHover={{ scale: 1.05 }}
+          >
             <Image
               src="/static/images/user-interface.svg"
               alt="Kantilal hobby"
@@ -40,11 +62,14 @@ function About() {
               height={40}
               className="w-8 sm:w-10 md:w-10 lg:w-9 xl:w-10"
             />
-            <h3 className="text-base sm:text-base md:text-base lg:text-base xl:text-lg text-gray-600">
+            <h3 className="text-base sm:text-base md:text-base lg:text-base xl:text-lg text-gray-600 dark:text-gray-300">
               DESIGNING UI
             </h3>
-          </div>
-          <div className="hobbyBox">
+          </motion.div>
+          <motion.div 
+            className="hobbyBox"
+            whileHover={{ scale: 1.05 }}
+          >
             <Image
               src="/static/images/code.svg"
               alt="Kantilal hobby"
@@ -52,11 +77,14 @@ function About() {
               height={40}
               className="w-8 sm:w-10 md:w-10 lg:w-9 xl:w-10"
             />
-            <h3 className="text-base sm:text-base md:text-base lg:text-base xl:text-lg text-gray-600">
+            <h3 className="text-base sm:text-base md:text-base lg:text-base xl:text-lg text-gray-600 dark:text-gray-300">
               CODING
             </h3>
-          </div>
-          <div className="hobbyBox">
+          </motion.div>
+          <motion.div 
+            className="hobbyBox"
+            whileHover={{ scale: 1.05 }}
+          >
             <Image
               src="/static/images/mountain.svg"
               alt="Kantilal hobby"
@@ -64,11 +92,14 @@ function About() {
               height={40}
               className="w-8 sm:w-10 md:w-10 lg:w-9 xl:w-10"
             />
-            <h3 className="text-base sm:text-base md:text-base lg:text-base xl:text-lg text-gray-600">
+            <h3 className="text-base sm:text-base md:text-base lg:text-base xl:text-lg text-gray-600 dark:text-gray-300">
               MOUNTAINS
             </h3>
-          </div>
-          <div className="hobbyBox">
+          </motion.div>
+          <motion.div 
+            className="hobbyBox"
+            whileHover={{ scale: 1.05 }}
+          >
             <Image
               src="/static/images/travelling.svg"
               alt="Kantilal hobby"
@@ -76,11 +107,14 @@ function About() {
               height={40}
               className="w-8 sm:w-10 md:w-10 lg:w-9 xl:w-10"
             />
-            <h3 className="text-base sm:text-base md:text-base lg:text-base xl:text-lg text-gray-600">
+            <h3 className="text-base sm:text-base md:text-base lg:text-base xl:text-lg text-gray-600 dark:text-gray-300">
               TRAVELLING
             </h3>
-          </div>
-          <div className="hobbyBox">
+          </motion.div>
+          <motion.div 
+            className="hobbyBox"
+            whileHover={{ scale: 1.05 }}
+          >
             <Image
               src="/static/images/headphones.svg"
               alt="Kantilal hobby"
@@ -88,13 +122,13 @@ function About() {
               height={40}
               className="w-8 sm:w-10 md:w-10 lg:w-9 xl:w-10"
             />
-            <h3 className="text-base sm:text-base md:text-base lg:text-base xl:text-lg text-gray-600">
+            <h3 className="text-base sm:text-base md:text-base lg:text-base xl:text-lg text-gray-600 dark:text-gray-300">
               MUSIC
             </h3>
-          </div>
+          </motion.div>
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }
 

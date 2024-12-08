@@ -4,10 +4,22 @@ import { motion, AnimatePresence } from "framer-motion";
 import { IoMdClose } from "react-icons/io";
 import { Link } from "react-scroll";
 import Image from "next/image";
+import { BsMoon, BsSun } from "react-icons/bs";
 
 function Nav() {
   const [sidebar, setSidebar] = useState(false);
   const [navbar, setNavbar] = useState(false);
+
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+    if (!darkMode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  };
 
   const variants = {
     open: { opacity: 1, x: 0 },
@@ -127,6 +139,12 @@ function Nav() {
           >
             Hire me
           </Link>
+          <button
+            onClick={toggleDarkMode}
+            className="bg-[#5C637C] border border-transparent hover:shadow-md hover:border-gray-200 focus:outline-none font-medium text-white p-3.5 rounded-xl text-xl"
+          >
+            {darkMode ? <BsSun /> : <BsMoon />}
+          </button>
           <button
             className="lg:hidden bg-[#5C637C] border border-transparent hover:shadow-md hover:border-gray-200 focus:outline-none font-medium text-white p-3.5 rounded-xl text-xl"
             onClick={() => setSidebar(true)}
