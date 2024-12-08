@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import Head from "next/head";
 import { useEffect, useState } from "react";
+import { useMediaQuery } from "react-responsive";
 import Loading from "@/components/Loading";
 import About from "@/components/About";
 import Footer from "@/components/Footer";
@@ -13,6 +14,15 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const [spinner, setSpinner] = useState(true);
+  const prefersDarkMode = useMediaQuery({ query: '(prefers-color-scheme: dark)' });
+
+  useEffect(() => {
+    if (prefersDarkMode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [prefersDarkMode]);
 
   useEffect(() => {
     setTimeout(() => setSpinner(false), 3000);

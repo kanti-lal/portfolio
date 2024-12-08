@@ -3,24 +3,48 @@ import EducationCard from "@/components/EducationCard";
 import { SkillCard } from "@/components/SkillCard";
 import { FiDownload } from "react-icons/fi";
 import { useState } from "react";
+import { motion } from "framer-motion";
 import ExperienceCard from "@/components/ExperienceCard";
 
 function Resume() {
   const [resumeBtn, setResumeBtn] = useState("false");
   return (
-    <div
-      className="flex flex-col items-center main-container pt-10 pb-12 px-4 sm:px-16"
+    <motion.div
+      className="flex flex-col items-center main-container pt-10 pb-12 px-4 sm:px-16 bg-white dark:bg-gray-900"
       id="resume"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
     >
-      <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-kl-dark mb-10">
+      <motion.h3 
+        className="text-3xl md:text-4xl lg:text-5xl font-bold text-kl-dark dark:text-white mb-10"
+        initial={{ y: -20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.3 }}
+      >
         Resume
-      </h3>
+      </motion.h3>
 
-      <div className="flex flex-col items-start self-start w-full mb-10">
-        <h6 className="text-xl md:text-2xl lg:text-3xl font-bold text-kl-dark mb-6 md:mb-10 px-8 sm:px-0">
+      <motion.div 
+        className="flex flex-col items-start self-start w-full mb-10"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.5 }}
+      >
+        <motion.h6 
+          className="text-xl md:text-2xl lg:text-3xl font-bold text-kl-dark dark:text-white mb-6 md:mb-10 px-8 sm:px-0"
+          initial={{ y: -20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.7 }}
+        >
           Education
-        </h6>
-        <div className="grid grid-cols-1 px-8 md:grid-cols-2 gap-6 lg:flex-row items-center justify-around w-full">
+        </motion.h6>
+        <motion.div 
+          className="grid grid-cols-1 px-8 md:grid-cols-2 gap-6 lg:flex-row items-center justify-around w-full"
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ delay: 0.9 }}
+        >
           <EducationCard
             year="2014-2017"
             degree="Poly. Computer Science & Engg Diploma"
@@ -31,14 +55,29 @@ function Resume() {
             degree="B.Tech in Computer Science & Engineering"
             university="Bikaner Technical University, Rajasthan"
           />
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
-      <div className="flex flex-col items-start self-start w-full mb-10">
-        <h6 className="text-xl md:text-2xl lg:text-3xl font-bold text-kl-dark mb-6 md:mb-10 px-8 sm:px-0">
+      <motion.div 
+        className="flex flex-col items-start self-start w-full mb-10"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.1 }}
+      >
+        <motion.h6 
+          className="text-xl md:text-2xl lg:text-3xl font-bold text-kl-dark dark:text-white mb-6 md:mb-10 px-8 sm:px-0"
+          initial={{ y: -20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 1.3 }}
+        >
           Certificates
-        </h6>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full mb-6 px-8 ">
+        </motion.h6>
+        <motion.div 
+          className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full mb-6 px-8"
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ delay: 1.5 }}
+        >
           <CertificateCard
             logo="/static/images/udemy.svg"
             company="Udemy"
@@ -116,14 +155,29 @@ function Resume() {
           />
 
          
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
-      <div className="flex flex-col items-start self-start w-full mb-10">
-        <h6 className="text-xl md:text-2xl lg:text-3xl font-bold text-kl-dark mb-6 md:mb-10 px-8 sm:px-0">
+      <motion.div 
+        className="flex flex-col items-start self-start w-full mb-10"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.7 }}
+      >
+        <motion.h6 
+          className="text-xl md:text-2xl lg:text-3xl font-bold text-kl-dark dark:text-white mb-6 md:mb-10 px-8 sm:px-0"
+          initial={{ y: -20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 1.9 }}
+        >
           Experience
-        </h6>
-        <div className="grid grid-cols-1 px-8 md:grid-cols-2 gap-6 lg:flex-row justify-around w-full">
+        </motion.h6>
+        <motion.div 
+          className="grid grid-cols-1 px-8 md:grid-cols-2 gap-6 lg:flex-row justify-around w-full"
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ delay: 2.1 }}
+        >
         <ExperienceCard
             logo="/static/images/codiste.png"
             year="March 2024 - Present"
@@ -146,14 +200,29 @@ function Resume() {
             info="Worked on multiple projects using different technologies like  
                    REACTJS, NextJS, Akita, JAVASCRIPT, JQUERY, HTML, CSS, SCSS, BOOTSTRAP, TAILWIND CSS, etc."
           />
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
-      <div className="flex flex-col items-start self-start w-full">
-        <h6 className="text-xl md:text-2xl lg:text-3xl font-bold text-kl-dark mb-6 md:mb-10 px-8 sm:px-0">
+      <motion.div 
+        className="flex flex-col items-start self-start w-full"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 2.3 }}
+      >
+        <motion.h6 
+          className="text-xl md:text-2xl lg:text-3xl font-bold text-kl-dark dark:text-white mb-6 md:mb-10 px-8 sm:px-0"
+          initial={{ y: -20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 2.5 }}
+        >
           Skills
-        </h6>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 gap-6 w-full mb-6 px-8 content-center items-center">
+        </motion.h6>
+        <motion.div 
+          className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 gap-6 w-full mb-6 px-8 content-center items-center"
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ delay: 2.7 }}
+        >
           <SkillCard img="/static/images/javascript.svg" title="JavaScript" />
           <SkillCard img="/static/images/react.svg" title="React" />
           <SkillCard img="/static/images/redux.svg" title="Redux" />
@@ -180,21 +249,24 @@ function Resume() {
           <SkillCard img="/static/images/semantic.svg" title="Semantic UI" />
 
           <SkillCard img="/static/images/npm.svg" title="NPM" />
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
       {/* Resume */}
 
-      <a
+      <motion.a
         href="./kanti-resume.pdf"
         target="_blank"
         download
-        className="flex space-x-4 text-xl my-6 items-center bg-kl-dark border border-transparent hover:shadow-md hover:border-gray-200 focus:outline-none  text-kl-lightGray px-6 py-5 rounded-2xl cursor-pointer"
+        className="flex space-x-4 text-xl my-6 items-center bg-kl-dark dark:bg-gray-800 border border-transparent hover:shadow-md hover:border-gray-200 focus:outline-none text-kl-lightGray dark:text-gray-300 px-6 py-5 rounded-2xl cursor-pointer"
+        initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ delay: 2.9 }}
       >
         <FiDownload className="text-2xl md:text-3xl" />
         <span>Resume</span>
-      </a>
-    </div>
+      </motion.a>
+    </motion.div>
   );
 }
 
