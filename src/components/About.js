@@ -21,14 +21,19 @@ function About() {
 
       <div className="p-8 flex flex-col space-y-4">
         <p className="text-base text-justify sm:text-lg text-gray-600">
-          I am a motivated professional Front End / JavaScript / ReactJS /
-          NextJS developer with over 2.5+ year of experience, a strong work ethic
-          and excellent interpersonal skills. I&apos;ve completed BTech in
-          Computer Science & Engineering from Bikaner Technical University. I am
-          an astute Front End developer with professional experience building
-          scalable Front End Application, converting mockups into pixel-perfect
-          designs, creating beautiful website animations. Proficient In ReactJS,
-          NextJS, Redux, TailwindCSS, SCSS, Material UI etc.
+          I am a passionate and results-driven Frontend Developer with over 3.5
+          years of professional experience specializing in JavaScript, React.js,
+          and Next.js. I hold a Bachelor of Technology (B.Tech) degree in
+          Computer Science & Engineering from Bikaner Technical University.
+          Throughout my career, I have successfully developed scalable and
+          high-performance frontend applications, transforming UI/UX designs
+          into pixel-perfect, responsive interfaces. I also have experience
+          creating visually appealing website animations to enhance user
+          engagement. I am highly skilled in a range of modern frontend
+          technologies, including React.js, Next.js, Redux, Tailwind CSS, SCSS,
+          and Material-UI. I am committed to writing clean, maintainable code
+          and continuously improving my skills to deliver the best user
+          experiences.
         </p>
         <h3 className="text-2xl text-gray-600 font-bold">I Love</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-2 md:gap-5 xl:flex items-center justify-between">

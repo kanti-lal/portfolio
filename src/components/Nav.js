@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { RiMenuLine } from "react-icons/ri";
 import { motion, AnimatePresence } from "framer-motion";
 import { IoMdClose } from "react-icons/io";
@@ -14,24 +14,45 @@ function Nav() {
     closed: { opacity: 0, x: "-100%" },
   };
 
-  const changeBackground = () => {
-    if (window.scrollY >= 50) {
-      setNavbar(true);
-    } else {
-      setNavbar(false);
-    }
+  const debounce = (func, wait) => {
+    let timeout;
+    return function executedFunction(...args) {
+      const later = () => {
+        clearTimeout(timeout);
+        func(...args);
+      };
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+    };
   };
+
+  const changeBackground = useCallback(
+    debounce(() => {
+      if (window.scrollY >= 50) {
+        setNavbar(true);
+      } else {
+        setNavbar(false);
+      }
+    }, 50),
+    []
+  );
 
   useEffect(() => {
     window.addEventListener("scroll", changeBackground);
-  }, []);
+    return () => {
+      window.removeEventListener("scroll", changeBackground);
+    };
+  }, [changeBackground]);
 
   return (
     <motion.div
       initial={{ position: "relative" }}
       animate={
-        navbar ? { position: "sticky", top: 0 } : { position: "relative" }
+        navbar
+          ? { position: "sticky", top: 0, transition: { duration: 0 } }
+          : { position: "relative", transition: { duration: 0 } }
       }
+      style={{ willChange: "transform" }}
     >
       <div
         className={
@@ -39,6 +60,7 @@ function Nav() {
             ? "stickyNavbarStyles"
             : "flex bg-[#F6F8FB] items-center justify-between w-full py-8 px-8 sm:px-16 z-50"
         }
+        style={{ transition: "all 0.3s ease-in-out" }}
       >
         <Link
           to="heroSection"
