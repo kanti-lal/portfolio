@@ -1,6 +1,6 @@
 import { useEffect, useState, useCallback } from "react";
 import { RiMenuLine } from "react-icons/ri";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { IoMdClose } from "react-icons/io";
 import { Link } from "react-scroll";
 import Image from "next/image";
@@ -49,8 +49,13 @@ function Nav() {
       initial={{ position: "relative" }}
       animate={
         navbar
-          ? { position: "sticky", top: 0, transition: { duration: 0 } }
-          : { position: "relative", transition: { duration: 0 } }
+          ? {
+            position: "sticky",
+            top: 0,
+            zIndex: 50,
+            transition: { duration: 0 },
+          }
+          : { position: "relative", zIndex: "auto", transition: { duration: 0 } }
       }
       style={{ willChange: "transform" }}
     >

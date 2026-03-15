@@ -21,19 +21,18 @@ function About() {
 
       <div className="p-8 flex flex-col space-y-4">
         <p className="text-base text-justify sm:text-lg text-gray-600">
-          I am a passionate and results-driven Frontend Developer with over 3.5
-          years of professional experience specializing in JavaScript, React.js,
-          and Next.js. I hold a Bachelor of Technology (B.Tech) degree in
-          Computer Science & Engineering from Bikaner Technical University.
-          Throughout my career, I have successfully developed scalable and
-          high-performance frontend applications, transforming UI/UX designs
-          into pixel-perfect, responsive interfaces. I also have experience
-          creating visually appealing website animations to enhance user
-          engagement. I am highly skilled in a range of modern frontend
-          technologies, including React.js, Next.js, Redux, Tailwind CSS, SCSS,
-          and Material-UI. I am committed to writing clean, maintainable code
-          and continuously improving my skills to deliver the best user
-          experiences.
+          I am a passionate and results-driven Software Engineer with over 4.4
+          years of professional experience building scalable AI, SaaS, and
+          e-commerce platforms. I hold a Bachelor of Technology (B.Tech) degree
+          in Computer Science & Engineering from Bikaner Technical University.
+          Throughout my career, I have successfully developed high-performance
+          applications, specializing in React.js, Next.js, and TypeScript with a
+          focus on architecture patterns like Micro-frontends and Module
+          Federation. I am expert in delivering robust features with attention
+          to accessibility (a11y), security (OWASP), and seamless user
+          experiences. I am committed to writing clean, maintainable code and
+          leveraging modern tools like NestJS, Prisma, and GraphQL to build
+          end-to-end solutions.
         </p>
         <h3 className="text-2xl text-gray-600 font-bold">I Love</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-2 md:gap-5 xl:flex items-center justify-between">

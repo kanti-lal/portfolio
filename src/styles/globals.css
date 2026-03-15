@@ -29,7 +29,7 @@ body {
   }
 
   .stickyNavbarStyles {
-    @apply flex bg-[#F6F8FB] items-center justify-between w-full px-8 sm:px-16 py-5 shadow-lg;
+    @apply flex bg-[#F6F8FB] items-center justify-between w-full px-8 sm:px-16 py-5 shadow-lg z-50;
   }
 
   .sidebar-link {
