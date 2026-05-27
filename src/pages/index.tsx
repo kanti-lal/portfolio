@@ -26,7 +26,7 @@ export default function Home() {
         <meta charSet="utf-8" />
         <meta
           name="description"
-          content="This is Kanti Lal. I am a Software Engineer with 4.4+ years of experience building scalable AI, SaaS, and e-commerce platforms. Expert in React.js, Next.js, and TypeScript."
+          content="This is Kanti Lal. I am a Software Engineer with 4.8+ years of experience building scalable AI, SaaS, and e-commerce platforms. Expert in React.js, Next.js, and TypeScript."
         />
         {/* Open Graph Meta Tags*/}
         <meta name="twitter:card" content="summary_large_image" />
@@ -38,20 +38,13 @@ export default function Home() {
         />
         <meta
           name="twitter:description"
-          content="Building high-performance applications with React, Next.js, and NestJS. 4.4+ years of experience in delivering robust features."
+          content="Building high-performance applications with React, Next.js, and NestJS. 4.8+ years of experience in delivering robust features."
         />
-        <meta
-          name="twitter:image"
-          content="/meta.png"
-        />
+        <meta name="twitter:image" content="/meta.png" />
         <meta property="og:type" content="website" />
         <meta property="fb:app_id" content="482063489741872" />
         <meta name="author" content="Kanti Lal"></meta>
-        <meta
-          property="og:image"
-          content="/meta.png"
-          key="ogimage"
-        />
+        <meta property="og:image" content="/meta.png" key="ogimage" />
         <meta property="og:site_name" content="Kanti Lal" key="ogsitename" />
         <meta
           property="og:title"
@@ -60,12 +53,10 @@ export default function Home() {
         />
         <meta
           property="og:description"
-          content="Software Engineer with 4.4+ years of experience building scalable AI, SaaS, and e-commerce platforms. Expert in React.js, Next.js, and TypeScript."
+          content="Software Engineer with 4.8+ years of experience building scalable AI, SaaS, and e-commerce platforms. Expert in React.js, Next.js, and TypeScript."
           key="ogdesc"
         />
-        <title>
-          Kanti Lal - Software Engineer | AI & SaaS Specialist
-        </title>
+        <title>Kanti Lal - Software Engineer | AI & SaaS Specialist</title>
         <link rel="icon" href="/static/images/logo.svg" />
       </Head>
       {spinner ? (
