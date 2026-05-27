@@ -21,7 +21,7 @@ function About() {
 
       <div className="p-8 flex flex-col space-y-4">
         <p className="text-base text-justify sm:text-lg text-gray-600">
-          I am a passionate and results-driven Software Engineer with over 4.4
+          I am a passionate and results-driven Software Engineer with over 4.8+
           years of professional experience building scalable AI, SaaS, and
           e-commerce platforms. I hold a Bachelor of Technology (B.Tech) degree
           in Computer Science & Engineering from Bikaner Technical University.
